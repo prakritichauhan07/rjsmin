@@ -1,0 +1,7 @@
+language: python
+
+services: docker
+
+script:
+  - chmod +x ./wheel/multiarch_build.sh
+  - ./wheel/multiarch_build.sh rjsmin 27 35 36 37 38 39
